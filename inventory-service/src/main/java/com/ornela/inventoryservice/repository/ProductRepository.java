@@ -1,0 +1,9 @@
+package com.ornela.inventoryservice.repository;
+
+import com.ornela.inventoryservice.entities.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+@RepositoryRestResource
+public interface ProductRepository extends JpaRepository<Product, Long> {
+}
